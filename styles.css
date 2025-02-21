@@ -315,20 +315,46 @@ nav .navigation ul li a:hover{
         align-items: center;
     }
     
-    nav .navigation ul {
-        flex-direction: column;
-        text-align: center;
+    /* Hide checkbox */
+    #menu-toggle {
         display: none;
     }
     
-    nav .navigation ul li {
-        margin: 10px 0;
-    }
-    
+    /* Label as menu icon */
     .menu-icon {
         display: block;
         font-size: 24px;
         cursor: pointer;
+        padding: 10px;
+    }
+    
+    nav .navigation {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav .navigation ul {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        width: 100%;
+        padding: 0;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked + .navigation ul {
+        display: block;
+    }
+    
+    nav .navigation ul li {
+        margin: 10px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
     }
 }
 
