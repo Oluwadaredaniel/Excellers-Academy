@@ -306,3 +306,55 @@ nav .navigation ul li a:hover{
     border-radius: 5px;
     margin: 0 5px 10px 5px
 }
+
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav .navigation ul {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    
+    nav .navigation ul li {
+        margin: 10px 0;
+    }
+    
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Responsive Home Section */
+@media (max-width: 768px) {
+    #home h2 {
+        font-size: 1.8rem;
+    }
+    
+    #home p {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive Features & Facilities */
+@media (max-width: 768px) {
+    #features .fea-base,
+    #facilities .facilities-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive Testimonials */
+@media (max-width: 768px) {
+    #testimonials .testimonial-box {
+        grid-template-columns: 1fr;
+    }
+}
