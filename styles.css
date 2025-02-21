@@ -347,7 +347,7 @@ nav .navigation ul li a:hover{
     }
     
     /* Show menu when checkbox is checked */
-    #menu-toggle:checked + .navigation ul {
+    #menu-toggle:checked ~ .navigation ul {
         display: block;
     }
     
